@@ -1,6 +1,6 @@
 <?php
-include "Includes/config.php";
-include "Includes/library.php";
+include "config.php";
+include "library.php";
 include "TasksController.php";
 
 $function = isset($_REQUEST["function"]) ? clean_param($_REQUEST["function"]) : '';
