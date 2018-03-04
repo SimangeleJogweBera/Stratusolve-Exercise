@@ -31,11 +31,11 @@ if ($function === "ajax") {
     <script type="text/javascript">
         var base_url = 'index.php';
         window.onbeforeunload = function (e) {
-            $.blockUI({message: "<img src='assets/images/loader.gif' />", css: {backgroundColor: 'transparent', border: 'none'}});
+            $.blockUI({message: "<img src='assets/loader.gif' />", css: {backgroundColor: 'transparent', border: 'none'}});
         };
 
         $(document).ajaxStart(function () {
-            $.blockUI({message: "<img src='assets/images/loader.gif' />", css: {backgroundColor: 'transparent', border: 'none'}});
+            $.blockUI({message: "<img src='assets/loader.gif' />", css: {backgroundColor: 'transparent', border: 'none'}});
         }).ajaxStop(function () {
             $.unblockUI();
         });
